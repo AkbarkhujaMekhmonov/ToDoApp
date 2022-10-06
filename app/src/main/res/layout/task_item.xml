@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp">
+
+    <RadioButton
+        android:id="@+id/check"
+        android:layout_width="30dp"
+        android:layout_height="24dp"
+        android:layout_marginLeft="18dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/title_of_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:text="dfsdgfdsagvdfasvadsvadsv"
+        android:textColor="#000"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/cal_img"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_baseline_calendar_month_24"
+        app:layout_constraintStart_toEndOf="@+id/check"
+        app:layout_constraintTop_toBottomOf="@+id/title_of_task" />
+
+    <TextView
+        android:id="@+id/date_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_51156536165"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cal_img"
+        app:layout_constraintLeft_toRightOf="@+id/cal_img"
+        app:layout_constraintTop_toTopOf="@id/cal_img" />
+
+    <ImageView
+        android:id="@+id/time_img"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_marginLeft="15dp"
+        android:src="@drawable/ic_baseline_access_time_24"
+        app:layout_constraintLeft_toRightOf="@+id/date_text"
+        app:layout_constraintTop_toTopOf="@+id/cal_img" />
+
+    <TextView
+        android:id="@+id/time_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/_51156536165"
+        android:textSize="11sp"
+        app:layout_constraintBottom_toBottomOf="@+id/cal_img"
+        app:layout_constraintLeft_toRightOf="@+id/time_img"
+        app:layout_constraintTop_toTopOf="@id/cal_img" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
